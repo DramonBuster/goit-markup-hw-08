@@ -1,0 +1,41 @@
+.social-list {
+  padding: 0px 32px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  &--footer {
+    padding: 0;
+    width: 206px;
+    margin-top: 10px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $icon-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:hover, &:focus {
+      background-color: $brand-color;
+      color: white;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    &--footer {
+      color: white;
+      background-color: #44454e;
+      padding: 0;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

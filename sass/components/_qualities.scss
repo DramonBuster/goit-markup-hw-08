@@ -1,0 +1,25 @@
+.qualities {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+
+  &__box {
+    width: 270px;
+  }
+  
+  &__icon-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}

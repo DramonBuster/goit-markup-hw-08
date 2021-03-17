@@ -1,0 +1,51 @@
+.agreement {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+
+  &__checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid $main-text;
+    border-radius: 2px;
+    z-index: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .agreement__input:focus ~ & {
+      outline: 1px dotted ButtonText;
+    }
+
+    .agreement__input:checked ~ & {
+      border: none;
+      background-color: $brand-color;
+    }
+  }
+
+  &__link {
+    margin-left: 4px;
+    text-decoration: underline;
+    color: $brand-color;
+  }
+}

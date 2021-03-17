@@ -1,0 +1,24 @@
+.work {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__overlay {
+    background-color: rgba(47, 48, 58, 0.8);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0px;
+  }
+}
