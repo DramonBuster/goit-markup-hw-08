@@ -43,7 +43,13 @@
     }
 
     &__card {
-      width: calc(50% - 15px);
+      width: 354px;
+    }
+
+    &__thumb {
+      width: 354px;
+      height: 374px;
+      object-fit: cover;
     }
   }
 
@@ -58,6 +64,11 @@
     &__card {
       width: 270px;
       padding-bottom: 30px;
+    }
+
+    &__thumb {
+      width: 270px;
+      height: 260px;
     }
   }
 }
