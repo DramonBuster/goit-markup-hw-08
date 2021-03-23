@@ -1950,7 +1950,7 @@ h4 {
   max-width: 100%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 380px) {
+@media screen and (max-width: 380px) {
   .m-menu__tel {
     font-size: 26px;
     line-height: 32px;
