@@ -1902,6 +1902,12 @@ h4 {
           justify-content: space-between;
 }
 
+@media screen and (max-height: 411px) {
+  .m-menu__nav-list {
+    height: 150px;
+  }
+}
+
 .m-menu__nav-link {
   font-weight: 500;
   font-size: 40px;
