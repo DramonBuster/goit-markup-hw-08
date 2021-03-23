@@ -780,7 +780,7 @@ h4 {
   padding-top: 118px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__section {
     padding-top: 200px;
   }
