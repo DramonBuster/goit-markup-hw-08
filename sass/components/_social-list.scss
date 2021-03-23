@@ -1,12 +1,11 @@
 .social-list {
-  padding: 0px 32px;
+  padding: 0px;
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
+  width: 206px;
 
   &--footer {
-    padding: 0;
-    width: 206px;
     margin-top: 10px;
   }
 

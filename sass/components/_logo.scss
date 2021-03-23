@@ -1,15 +1,13 @@
 .logo {
-  padding-bottom: 25px;
-  width: 145px;
-  height: 31px;
   font-family: 'Raleway', sans-serif;
   color: $brand-color;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  font-size: 24px;
+  line-height: 28px;
+  width: 134px;
+  height: 28px;
 
   &--header {
     color: #000;
@@ -17,5 +15,14 @@
 
   &--footer {
     color: #fff;
+  }
+
+  @media screen and (min-width: $desktop) {
+    .logo {
+      width: 145px;
+      height: 31px;
+      font-size: 26px;
+      line-height: 31px;
+    }
   }
 }

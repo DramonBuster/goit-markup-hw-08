@@ -1,9 +1,30 @@
 .portfolio {
-  padding: 94px 0px;
+  padding: 60px 0px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0px;
+  }
 
   &__sorting {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: space-between;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+      height: 38px;
+    }
+
+    &-item {
+      padding: 0;
+      margin: 0;
+      margin-right: 8px;
+      margin-bottom: 15px;
+
+      @media screen and (min-width: $tablet) {
+        margin: 0 4px;
+      }
+    }
   }
 
   &__sorting-button {
@@ -18,7 +39,6 @@
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 0 4px;
     border-radius: 4px;
 
     &:hover, &:focus {

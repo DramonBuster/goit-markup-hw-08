@@ -4,13 +4,8 @@
   line-height: 19px;
   vertical-align: top;
   font-style: normal;
-  padding: 94px 0;
-
-  &__list {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-  }
+  letter-spacing: 0.03em;
+  padding: 60px 0;
   
   &__names {
     color: $main-text;
@@ -28,11 +23,41 @@
   }
   
   &__card {
-    width: 270px;
+    box-sizing: border-box;
     background: white;
-    padding-bottom: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__card {
+      width: calc(50% - 15px);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
+
+    &__list {
+      margin-top: 50px;
+      flex-wrap: nowrap;
+    }
+
+    &__card {
+      width: 270px;
+      padding-bottom: 30px;
+    }
   }
 }

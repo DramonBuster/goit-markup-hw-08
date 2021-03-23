@@ -1,19 +1,46 @@
 .container {
-  min-width: 320px;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: $mobile;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    max-width: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: $desktop;
+  }
 
   &--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    min-height: 60px;
+
+    @media screen and (min-width: $tablet) {
+      min-height: 80px;
+    }
   }
 
   &--footer {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    padding: 60px 15px;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-left: 76px;
+      padding-right: 89px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 60px 15px;
+      flex-wrap: nowrap;
+    }
   }
 }

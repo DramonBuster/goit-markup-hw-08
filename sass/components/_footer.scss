@@ -1,6 +1,13 @@
 .footer {
   &__info {
-    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $desktop) {
+      max-width: 231px;
+      align-items: flex-start;
+    }
   }
 
   &__adress {
@@ -14,17 +21,27 @@
 
   &__info-list {
     margin-top: 20px;
-    width: 231px;
-    height: 81px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+
+    width: 232px;
+    height: 79px;
+
+    @media screen and (min-width: $desktop) {
+      width: 231px;
+      height: 81px;
+      align-items: flex-start;
+    }
   }
 
   &__contacts {
     color: $footer-text;
     font-weight: 400;
     letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
 
     &:hover {
       color: $brand-color;
@@ -33,10 +50,24 @@
     }
   }
 
-  &__social, &__subscribe {
+  &__social,
+  &__subscribe {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    margin-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    &__social {
+      margin-top: 5px;
+    }
   }
 
   &__title {
@@ -45,29 +76,50 @@
 
   &__form {
     display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    width: 570px;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+      width: 570px;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__label {
-    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      margin-bottom: 0;
+    }
   }
 
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
     border-radius: 4px;
     background-color: #2f303a;
     font-size: 16px;
     padding-left: 16px;
+    padding-right: 16px;
     color: $footer-text;
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      box-sizing: border-box;
     }
   }
 }

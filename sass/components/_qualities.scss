@@ -1,10 +1,39 @@
 .qualities {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 94px;
+  display: inline-block;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    margin-bottom: 94px;
+  }
 
   &__box {
-    width: 270px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: $tablet) {
+      width: calc(50% - 15px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(n + 3) {
+      @media screen and (min-width: $tablet) and (max-width: 1119px) {
+        margin-bottom: 0;
+      }
+    }
   }
   
   &__icon-box {

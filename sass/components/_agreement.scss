@@ -2,9 +2,14 @@
   display: flex;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 
   &__label {
     display: flex;
